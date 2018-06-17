@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="library.assistant.editBook.EditBookController">
+   <children>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="610.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="bookField" labelFloat="true" promptText="Book ID" />
+                  <JFXTextField fx:id="titleField" labelFloat="true" layoutX="10.0" layoutY="194.0" promptText="Book Title" />
+                  <JFXTextField fx:id="authorField" labelFloat="true" layoutX="10.0" layoutY="178.0" promptText="Author" />
+                  <JFXTextField fx:id="publisherField" labelFloat="true" layoutX="10.0" layoutY="162.0" promptText="Publisher" />
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="updatebtn" alignment="CENTER" onAction="#updateAction" prefHeight="36.0" prefWidth="115.0" text="Save" />
+                        <JFXButton fx:id="cancelbtn" alignment="CENTER" layoutX="78.0" layoutY="27.0" onAction="#closeWindow" prefHeight="36.0" prefWidth="115.0" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="library.assistant.addMember.AddmemberController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="memberIDField" labelFloat="true" promptText="Member ID" />
+                  <JFXTextField fx:id="nameField" labelFloat="true" layoutX="10.0" layoutY="194.0" promptText="Name" />
+                  <JFXTextField fx:id="emailField" labelFloat="true" layoutX="10.0" layoutY="178.0" promptText="Email" />
+                  <JFXTextField fx:id="mobileField" labelFloat="true" layoutX="10.0" layoutY="202.0" promptText="Mobile" />
+                  <JFXTextField fx:id="addressField" labelFloat="true" layoutX="10.0" layoutY="162.0" promptText="Address" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="savebtn" alignment="CENTER" onAction="#memberAction" prefHeight="36.0" prefWidth="115.0" text="Save" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
